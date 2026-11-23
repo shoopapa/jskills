@@ -1,0 +1,4 @@
+interface:
+  display_name: "Epic"
+  short_description: "Lead a team of agents through a large goal to merged PRs"
+  default_prompt: "Use $epic to build this end to end with a team of agents. I am not watching this thread."

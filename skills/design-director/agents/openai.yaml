@@ -1,0 +1,6 @@
+interface:
+  display_name: "Design Director"
+  short_description: "Refine visual artifacts through deliberate design"
+  default_prompt: "Use $design-director to create and refine this visual deliverable."
+policy:
+  allow_implicit_invocation: true
