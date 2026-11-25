@@ -25,6 +25,21 @@ Give each delegate the request and relevant context. For review or feedback,
 keep their work read-only. Collect their responses and summarize the useful
 findings, disagreements, and recommended next steps.
 
+For a code review, tell every delegate to rank findings by how likely a real
+user is to hit them. A race or timing edge case that needs a narrow window or
+an unusual sequence of actions is a nit, not a should or a blocker, unless it
+loses data or breaks security.
+
+Add a line for each member to its task, after any shared brief:
+
+- **GPT Sol:** Don't be overly critical. We don't need to address
+  millisecond race conditions or rare timing edge cases; report those as nits.
+  Save should and blocker for issues a user will plausibly hit.
+- **Claude Opus:** Hunt for bugs. Don't spend the review confirming that
+  earlier fixes landed or listing what's correct; keep that to one line.
+  Spend the effort finding new failure scenarios on paths the diff touches.
+  Batch file reads, and read only the ranges you need.
+
 Do not wait idle. When a result arrives, check its findings against the code
 at once and decide what to fix while the other delegates run. Do not edit
 files while a delegate still reviews the same checkout. If the user's

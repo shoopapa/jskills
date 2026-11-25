@@ -16,6 +16,7 @@ Global agent skills with `~/.agents/skills` as the single source of truth across
 | `full-stop` | Immediate stop protocol |
 | `leaving-pr-comments` | Guidelines for leaving concise, constructive GitHub PR comments |
 | `modernize` | Rebase and update older PRs |
+| `plan-council` | Draft a lean implementation plan and run a council design review without over-planning |
 | `sol-loop` | Iterative code review loop |
 | `split-to-prs` | Safely split a large branch or diff into smaller reviewable PRs |
 | `takeover` | Take over an existing PR, branch, or agent thread |
